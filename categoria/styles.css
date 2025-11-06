@@ -1,0 +1,268 @@
+.divTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.divTitle h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(36, 50, 65, 1) 0%, rgba(92, 128, 167, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.divForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-categorias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}
+
+.form-categorias .messages {
+    position: absolute;
+    top: -50%;
+    left: -15%;
+    margin: 0 50px 50px 50px;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #fffff0;
+    border-radius: 8px;
+    margin: 0 auto;
+    background: #243241;
+    color: #fffff0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-style: normal;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out
+}
+
+.form-categorias .messages:empty {
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    border: none;
+    transform: translateX(-100%);
+}
+
+.input-categoria {
+    width: 100%;
+    padding: 15px;
+    height: 64px;
+    border: none;
+    border: 1px solid #243241;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-categoria::placeholder {
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.input-categoria:focus {
+    outline: none;
+    border: 2px solid #243241;
+}
+
+.btnSubmit {
+    border: none;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    padding: 12px 35px;
+    color: #fffff0;
+    background: #243241;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 18px;
+    box-shadow: 0 2px 6px #252525;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.btnSubmit:hover {
+    border: 1px solid #fffff0;
+}
+
+.btnSubmit:active {
+    transform: scale(0.97);
+}
+
+.input-categoria:focus {
+    outline: none;
+}
+
+.categorias {
+    margin: 0 auto;
+    width: 100%;
+    background: #243241;
+    border: 3px solid #252525;
+    border-radius: 12px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.categorias-cadastradas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+    background: #fffff0;
+    border-radius: 12px;
+    margin-top: 20px;
+    overflow-y: auto;
+    border: 2px solid #252525;
+}
+
+.divCategorias {
+    width: 100%;
+    border: 2px solid #243241;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 8px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.row-container-categories {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.task-buttons-categories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btnEditCategories {
+    border: none;
+    border: 1px solid #252525;
+    border-radius: 8px;
+    padding: 10px 17px;
+    color: #fffff0;
+    background: #243241;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    box-shadow: 0 2px 6px #252525;
+    cursor: pointer;
+}
+
+.btnDeleteCategories {
+    border: none;
+    border: 1px solid #930707;
+    border-radius: 8px;
+    padding: 10px 17px;
+    color: #fffff0;
+    background: #930707;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    box-shadow: 0 2px 6px #252525;
+    cursor: pointer;
+}
+
+.btnEditCategories:hover {
+    border: 1px solid #fffff0;
+}
+
+.btnEditCategories:active {
+    transform: scale(0.92);
+}
+
+.btnDeleteCategories:hover {
+    border: 1px solid #fffff0;
+}
+
+.btnDeleteCategories:active {
+    transform: scale(0.92);
+}
+
+.divTitleCategorias h1 {
+    font-size: 40px;
+    color: #fffff0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.buttonToggle {
+    cursor: pointer;
+}
+
+.sidebar.sidebar-light {
+    background: #B0C4DE;
+}
+
+.sidebar.sidebar-light ul li a {
+    color: #243241;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.btnSubmit-light {
+    background: #B0C4DE;
+    color: #243241;
+}
+
+.categorias-light {
+    background: #B0C4DE;
+}
+
+.categorias-light h1 {
+    color: #243241;
+}
